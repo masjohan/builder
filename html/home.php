@@ -4,9 +4,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
   <head>
     <title>Site builder</title>
-    <?php include_once 'html/includes/head.php'; ?>
+    <?php include_once('html/includes/head.php'); ?>
+    <!-- CK Editor script -->
+    <script src="//cdn.ckeditor.com/4.5.1/standard/ckeditor.js"></script>
   </head>
   <body>
-  	<?php include_once 'html/includes/footer.php'; ?>
+
+  	<textarea name="myeditor"></textarea>
+        <script>
+            CKEDITOR.replace('myeditor');
+        </script>
+
+  	<?php include_once('html/includes/footer.php'); ?>
   </body>
 </html>
