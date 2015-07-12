@@ -4,10 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
   <head>
     <title>Site builder</title>
-    <?php $this->load->view('includes/head'); ?>
+    <?php include_once 'html/includes/head.php'; ?>
   </head>
   <body>
-
-    <?php $this->load->view('includes/footer'); ?>
+  	<?php include_once 'html/includes/footer.php'; ?>
   </body>
 </html>
